@@ -1,0 +1,6 @@
+{
+  "name": "Manifesta - Gestão Financeira Espiritual",
+  "description": "Gestão financeira consciente focada em prosperidade espiritual, destino de intenções, contas a pagar e receber, fluxo de caixa e relatórios de gratidão.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

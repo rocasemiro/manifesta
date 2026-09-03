@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-natural: #fdfcf7;
+    --sage-dark: #5a6b5d;
+    --sage-medium: #7d8e7b;
+    --sage-light: #e9edc9;
+    --sand-accent: #d4a373;
+    --sand-dark: #b88655;
+    --text-main: #3d403d;
+    --text-muted: #8c968d;
+    --surface: #ffffff;
+  }
+
+  body {
+    background-color: var(--bg-natural);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Lora', 'Georgia', serif;
+  }
+}
+
+/* Custom Natural Tones theme utility classes */
+.bg-natural-bg { background-color: #fdfcf7; }
+.bg-natural-surface { background-color: #ffffff; }
+.bg-natural-sage { background-color: #5a6b5d; }
+.bg-natural-moss { background-color: #7d8e7b; }
+.bg-natural-highlight { background-color: #e9edc9; }
+.bg-natural-sand { background-color: #d4a373; }
+
+.text-natural-dark { color: #3d403d; }
+.text-natural-sage { color: #5a6b5d; }
+.text-natural-moss { color: #7d8e7b; }
+.text-natural-sand { color: #d4a373; }
+.text-natural-muted { color: #8c968d; }
+
+.border-natural-sage { border-color: rgba(90, 107, 93, 0.2); }
+.border-natural-sand { border-color: rgba(212, 163, 115, 0.3); }
+.border-natural-muted { border-color: rgba(140, 150, 141, 0.2); }
+
+.card-natural {
+  background-color: #ffffff;
+  border: 1px solid rgba(90, 107, 93, 0.1);
+  box-shadow: 0 4px 12px rgba(90, 107, 93, 0.04);
+  border-radius: 1.25rem;
+}

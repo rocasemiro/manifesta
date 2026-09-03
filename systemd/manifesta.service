@@ -1,0 +1,21 @@
+[Unit]
+Description=Manifesta - Finanças Conscientes & Prosperidade Espiritual
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/var/www/manifesta
+ExecStart=/usr/bin/node /var/www/manifesta/dist/server.cjs
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=manifesta
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=DATABASE_URL=postgres://postgres:manifesta_sec_pass_2026@localhost:5432/manifesta_db
+Environment=GEMINI_API_KEY=SuaChaveGeminiAqui
+
+[Install]
+WantedBy=multi-user.target
